@@ -1,0 +1,24 @@
+{
+  "name": "quill-mathquill-blot",
+  "version": "1.0.0",
+  "description": "A Blot/Extension for Quill.js to embed editable formulas with mathQuill",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TessyPowder/Quill-mathQuill-blot.git"
+  },
+  "keywords": [
+    "quill",
+    "mathquill",
+    "blot"
+  ],
+  "author": "Jonathan Treffler",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/TessyPowder/Quill-mathQuill-blot/issues"
+  },
+  "homepage": "https://github.com/TessyPowder/Quill-mathQuill-blot#readme"
+}
