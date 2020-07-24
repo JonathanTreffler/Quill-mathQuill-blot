@@ -1,4 +1,4 @@
-# Quill-mathQuill-blot
+# Quill mathQuill Blot
 
 A Blot/Extension for Quill.js to embed editable formulas with mathQuill.
 
