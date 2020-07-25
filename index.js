@@ -34,7 +34,7 @@ export default {
 			update(mutations, context) {
 				console.log(mutations, context);
 			}
-			format(name, value) {
+			/*format(name, value) {
 				if (ATTRIBUTES.indexOf(name) > -1) {
 				  if (value) {
 					this.domNode.setAttribute(name, value);
@@ -52,6 +52,20 @@ export default {
 				  }
 				  return formats;
 				}, {});
+			}*/
+			format(name, value) {
+				if(name == "size") {
+					domNode.style.FontSize = value;
+				}
+			}
+			static formats(domNode) {
+				if(domNode.style.FontSize) {
+					var size = domNode.style.FontSize;
+				}
+
+				return {
+					size: size,
+				};
 			}
 		}
 
