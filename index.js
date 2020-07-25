@@ -24,11 +24,13 @@ export default {
 					node.mathField.focus();
 				});
 
-		    return node;
-		  }
-
+		    	return node;
+		  	}
 			static value(node) {
 				return node.mathField.latex();
+			}
+			update(mutations, context) {
+				console.log(mutations, context);
 			}
 		}
 
