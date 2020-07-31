@@ -1,6 +1,6 @@
 {
   "name": "quill-mathquill-blot",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "A Blot/Extension for Quill.js to embed editable formulas with mathQuill",
   "main": "index.js",
   "scripts": {
