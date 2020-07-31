@@ -17,7 +17,7 @@ jobs:
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.PUBLISH_NPM_TOKEN }}
-  publish-github:
+  publish-gpr:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -26,8 +26,8 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
           scope: '@TessyPowder'
-      - run: npm install
-      - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.PUBLISH_GITHUB_TOKEN }}
-          registry: https://npm.pkg.github.com/
+      - run: npm ci
+      - run: echo registry=https://npm.pkg.github.com/TessyPowder >> .npmrc
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.PUBLISH_GITHUB_TOKEN}}
