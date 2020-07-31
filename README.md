@@ -10,9 +10,11 @@
 A Blot/Extension for Quill.js to embed editable formulas with mathQuill.
 
 ## Usage:
-```js
-// import Quill
 
+- import Quill
+- import mathQuill ([docs](http://docs.mathquill.com/en/latest/Getting_Started/))
+
+```js
 import mathQuillBlot from "quill-mathquill-blot";
 mathQuillBlot.register(Quill);
 ```
