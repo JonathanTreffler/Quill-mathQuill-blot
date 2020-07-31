@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/TessyPowder/Quill-mathQuill-blot/issues"
   },
-  "homepage": "https://github.com/TessyPowder/Quill-mathQuill-blot#readme"
+  "homepage": "https://github.com/TessyPowder/Quill-mathQuill-blot#readme",
+  "dependencies": {
+    "eslint": "^7.5.0"
+  }
 }
