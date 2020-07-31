@@ -27,7 +27,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@TessyPowder'
       - run: npm ci
-      - run: echo registry=https://npm.pkg.github.com/TessyPowder >> .npmrc
+      #- run: echo registry=https://npm.pkg.github.com/TessyPowder >> .npmrc
       - run: sed -i 's/quill-mathquill-blot/@TessyPowder\/quill-mathquill-blot/gi' package.json
       - run: npm publish
         env:
