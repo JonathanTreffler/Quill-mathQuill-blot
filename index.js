@@ -1,4 +1,4 @@
-const ATTRIBUTES = ['font-size'];
+//const ATTRIBUTES = ["font-size"];
 
 export default {
 	register: function(Quill) {
@@ -6,28 +6,30 @@ export default {
 
 		class MathQuillBlot extends BlockEmbed {
 			static create(content) {
-		    	let node = super.create();
+				let node = super.create();
 				node.setAttribute("contenteditable", false);
 
 				var config = {
-				  spaceBehavesLikeTab: true,
+					spaceBehavesLikeTab: true,
 				};
 
 				let span = document.createElement("span");
 
-				$(node).append(span);
+				node.appendChild(span);
 				console.log(node);
 
-				this.MQ = MathQuill.getInterface(2);
+
+				this.MQ = MathQuill.getInterface(2); // eslint-disable-line
 				node.mathField = this.MQ.MathField(span, config);
 
-				//let self = this;
+				node.mathField.latex(content);
+
 				node.addEventListener("click", function() {
 					node.mathField.focus();
 				});
 
-		    	return node;
-		  	}
+				return node;
+			}
 			static value(node) {
 				return node.mathField.latex();
 			}
@@ -53,7 +55,7 @@ export default {
 				  return formats;
 				}, {});
 			}*/
-			format(name, value) {
+			/*format(name, value) {
 				if(name == "size") {
 					domNode.style.FontSize = value;
 				}
@@ -66,7 +68,7 @@ export default {
 				return {
 					size: size,
 				};
-			}
+			}*/
 		}
 
 		MathQuillBlot.blotName = "mathQuill";
