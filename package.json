@@ -23,7 +23,9 @@
     "url": "https://github.com/TessyPowder/Quill-mathQuill-blot/issues"
   },
   "homepage": "https://github.com/TessyPowder/Quill-mathQuill-blot#readme",
-  "dependencies": {},
+  "dependencies": {
+    "quill": "^1.3.7"
+  },
   "devDependencies": {
     "eslint": "^7.5.0"
   }
