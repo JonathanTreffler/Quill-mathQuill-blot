@@ -76,5 +76,5 @@ export default {
 		MathQuillBlot.className = "mathQuillBlot";
 
 		Quill.register(MathQuillBlot);
-	}
+	},
 };
