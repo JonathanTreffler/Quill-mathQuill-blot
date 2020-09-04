@@ -48,4 +48,4 @@ function insert() {
 }
 ```
 
-
+### [Demo](https://jonathan-treffler.de/Quill-mathQuill-blot/)
