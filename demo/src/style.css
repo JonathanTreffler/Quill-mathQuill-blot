@@ -1,0 +1,29 @@
+#container {
+	width: 70%;
+	margin: auto;
+}
+
+.mathQuillBlot {
+	background-color: lightgray;
+	word-wrap: normal !important;
+	white-space: normal !important;
+	margin-bottom: 1px;
+}
+
+.mathQuillBlot .mq-math-mode {
+	width: 100%;
+	border: none !important;
+}
+
+.mq-editable-field {
+	min-width: 20%;
+}
+
+.mq-editable-field.mq-focused {
+	border: 1px solid black;
+	box-shadow: none !important;
+}
+
+.ql-mathQuill:after {
+	content: "mathQuill";
+}
