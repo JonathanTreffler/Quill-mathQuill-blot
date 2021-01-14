@@ -18,7 +18,7 @@
     "style-loader": "^2.0.0",
     "webpack": "^5.14.0",
     "webpack-cli": "^4.3.1",
-    "webpack-dev-server": "^3.11.1"
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "quill-mathquill-blot": "^1.9.0"
