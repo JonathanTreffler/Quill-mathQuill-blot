@@ -1,0 +1,23 @@
+name: Test Build
+
+on:
+  push:
+    branches:
+      - dependabot*
+
+jobs:
+  test-build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+
+    - name: "Install Dependencies"
+      run: npm ci
+      working-directory: demo
+
+    - name: "Build static Website"
+      run: npm run build
+      working-directory: demo
